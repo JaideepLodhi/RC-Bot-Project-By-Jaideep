@@ -1,5 +1,6 @@
 #include <WiFi.h>
 #include <esp_now.h>
+
 // Replace With your ESP MAC address 88:57:21:B6:55:38
 uint8_t receiverMAC[] = {0x88, 0x57, 0x21, 0xB6, 0x55, 0x38};
 
@@ -11,7 +12,7 @@ struct_message dataToSend;
 esp_now_peer_info_t peerInfo;
 
 // Button Pins
-#define BTN_F 14
+#define BTN_F 14 
 #define BTN_B 27
 #define BTN_L 26
 #define BTN_R 25
